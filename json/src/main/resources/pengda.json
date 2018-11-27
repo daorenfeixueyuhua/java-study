@@ -1,0 +1,13 @@
+{
+  "name" : "彭达",
+  "age" : 20,
+  "birthday" : "1998-12-27",
+  "school" : "贵州师范大学",
+  "major" : [
+    "计算机", "泡妞"
+  ],
+  "has_girlfriend" : false,
+  "car" : null,
+  "house" : null,
+  "comment" : "这是一个注释"
+}
