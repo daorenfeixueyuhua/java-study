@@ -18,13 +18,9 @@ class DelayThread implements Runnable{
                 System.out.println("Thread "+no+" with a delay "+delay);
             }
         }catch(InterruptedException e){
-
+            e.printStackTrace();
         }
     }
-    public void start(){
-        new Thread(this).start();
-    }
-
 }
 
 /**
@@ -34,15 +30,13 @@ class DelayThread implements Runnable{
 
 public class MyThread {
     public static void main(String args[]){
-        DelayThread thread1=new DelayThread();
-        DelayThread thread2=new DelayThread();
+        DelayThread dt1=new DelayThread();
+        DelayThread dt2=new DelayThread();
+        Thread thread1 = new Thread(dt1);
+        Thread thread2 = new Thread(dt2);
+
         thread1.start();
         thread2.start();
-        try{
-            sleep(1000);
-        }catch(InterruptedException e){
-            System.out.println("Thread wrong");
-        }
     }
 
 }
