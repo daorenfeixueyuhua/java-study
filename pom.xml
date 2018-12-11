@@ -15,6 +15,7 @@
         <!--<module>javaEE-study</module>-->
         <module>javaSE</module>
         <module>json</module>
+        <module>design-pattern</module>
         <!--<module>springmvc-stduy</module>-->
         <!--<module>javaWeb</module>-->
     </modules>
