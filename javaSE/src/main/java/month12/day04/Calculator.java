@@ -1,8 +1,9 @@
 package month12.day04;
 
-import java.awt.*;
-import java.awt.event.*;
 import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class Calculator extends JFrame {
 
@@ -24,9 +25,9 @@ public class Calculator extends JFrame {
         Container container = getContentPane(); // 新建一个容器
         container.setLayout(new BorderLayout(5, 5)); // 设置左右间距为5像素
 
-
         JPanel pnlNorth = new JPanel();  // 北面面板
         JPanel pnlCenter = new JPanel();  // 中间面板
+
 
         // 把textFeild和panel 都放到容器上
         container.add(pnlNorth, BorderLayout.NORTH); // 把pnlNorth放在北面
@@ -255,7 +256,7 @@ public class Calculator extends JFrame {
                 calculation(a, b);
                 textField.setText(String.valueOf(value));
                 break;
-            default: ;   // 在本计算器程序中没有其它情况
+            default: // 在本计算器程序中没有其它情况
         }
     }
 
@@ -292,7 +293,7 @@ public class Calculator extends JFrame {
                 a = b = null;
                 op = 'n';
                 break;
-            default: ;
+            default:
         }
         value = String.valueOf(v);
     }

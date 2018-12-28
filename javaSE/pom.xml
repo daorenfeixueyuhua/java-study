@@ -11,5 +11,43 @@
 
     <artifactId>javaSE</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.12</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.zenframework.z8.dependencies.commons</groupId>
+            <artifactId>commons-lang-2.1</artifactId>
+            <version>2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.ow2.util.bundles</groupId>
+            <artifactId>commons-logging-1.1.1</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>hsqldb</groupId>
+            <artifactId>hsqldb</artifactId>
+            <version>1.8.0.10</version>
+        </dependency>
+        <dependency>
+            <groupId>jackcess</groupId>
+            <artifactId>jackcess</artifactId>
+            <version>1.1.10</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>2.11.1</version>
+        </dependency>
+        <dependency>
+            <groupId>net.sf.ucanaccess</groupId>
+            <artifactId>ucanaccess</artifactId>
+            <version>3.0.3</version>
+        </dependency>
+    </dependencies>
 
 </project>
