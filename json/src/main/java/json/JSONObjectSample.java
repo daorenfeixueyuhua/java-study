@@ -51,6 +51,8 @@ public class JSONObjectSample {
         diaosi.setComment("我是你大爷");
         diaosi.setHas_girlfriend(false);
         diaosi.setMajor(new String[] {"计算机","泡妞"});
+        String infoMessage = "the information of user :" + new JSONObject(diaosi);
+        System.out.println(infoMessage);
         System.out.println(new JSONObject(diaosi));
     }
 }
